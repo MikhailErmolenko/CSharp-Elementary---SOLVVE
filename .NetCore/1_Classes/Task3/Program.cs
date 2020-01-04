@@ -10,8 +10,20 @@ namespace Task3
 	{
 		static void Main(string[] args)
 		{
-			Book book = new Book();
+			Title newtitle = new Title();
+			Console.WriteLine("Enter title of book:");
+			newtitle.title = Console.ReadLine();
 
+			Author newauthor = new Author();
+			Console.WriteLine("Enter author name:");
+			newauthor.author = Console.ReadLine();
+
+			Content newcontent = new Content();
+			Console.WriteLine("Tell me about this book:");
+			newcontent.content = Console.ReadLine();
+
+			Book book = new Book(newtitle, newauthor, newcontent);
+			book.Show();
 			Console.ReadKey();
 		}
 	}

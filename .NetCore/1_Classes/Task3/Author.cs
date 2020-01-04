@@ -6,9 +6,9 @@ namespace Task3
 {
 	class Author
 	{
-		string author;
+		public string author;
 
-		void Show()
+		 public void Show()
 		{
 			Console.ForegroundColor = ConsoleColor.Green;
 			Console.WriteLine($"Author: {author}");

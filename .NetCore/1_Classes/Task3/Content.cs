@@ -6,8 +6,9 @@ namespace Task3
 {
 	class Content
 	{
-		string content;
-		void Show()
+		public string content;
+		
+		public void Show()
 		{
 			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.WriteLine($"Content: {content}");

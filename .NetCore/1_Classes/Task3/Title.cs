@@ -6,12 +6,12 @@ namespace Task3
 {
 	class Title
 	{
-		string title;
+		public string title;
 
-		void Show()
+		public void Show()
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine($"Title: {title}");
+				Console.WriteLine($"\nTitle: {title}");
 			}
 	}
 }

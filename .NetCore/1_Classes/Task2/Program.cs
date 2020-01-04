@@ -24,12 +24,9 @@ namespace Task2
         {
             double value;
             Console.WriteLine(prompt);
-            while (true)
+            while (!double.TryParse(Console.ReadLine(), out value))
             {
-                if (double.TryParse(Console.ReadLine(), out value))
-                    break;
-                else
-                    Console.WriteLine("Incorrect value. Pls try again:");
+                Console.WriteLine("Incorrect value. Pls try again:");
             }
             return value;
         }
